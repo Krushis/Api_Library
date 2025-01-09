@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lukas\\Desktop\\ApiLibrary\\Backend\\WebApplication1\\LibraryBackend.csproj": {}
+    "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\LibraryBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lukas\\Desktop\\ApiLibrary\\Backend\\WebApplication1\\LibraryBackend.csproj": {
+    "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\LibraryBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lukas\\Desktop\\ApiLibrary\\Backend\\WebApplication1\\LibraryBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\LibraryBackend.csproj",
         "projectName": "LibraryBackend",
-        "projectPath": "C:\\Users\\Lukas\\Desktop\\ApiLibrary\\Backend\\WebApplication1\\LibraryBackend.csproj",
+        "projectPath": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\LibraryBackend.csproj",
         "packagesPath": "C:\\Users\\Lukas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lukas\\Desktop\\ApiLibrary\\Backend\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

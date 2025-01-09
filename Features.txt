@@ -1,0 +1,14 @@
+ 
+Log in
+- User a
+- Admin b
+
+a:
+view books
+
+b:
+add books
+
+Book - title, picture, price, short description.
+You click on the book and it brings you to a mini page where you can
+order the book
