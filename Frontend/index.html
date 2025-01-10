@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The best and only Library</title>
 </head>
 <body>
     <h1> Library api </h1>
+     
+    <h2>Add a new book</h2>
+    <form id="add-book-form" enctype="multipart/form-data">
+        <input type="text" id="title" name="title" placeholder="Book Title" required />
+        <input type="text" id="description" name="description" placeholder="Book Description" required />
+        <input type="text" id="year" name="year" placeholder="Year" required />
+        <input type="file" id="cover-image" name="coverImage" accept="image/*" required />
+        <button type="submit" id="post-image">Add Book</button>
+    </form>
+
+    <div id="message"></div>
+
+    <div id="book-list"></div>
+
+    <script src="js/app.js"></script>
+
 </body>
 </html>

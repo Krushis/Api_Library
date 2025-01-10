@@ -1,22 +1,32 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
 namespace LibraryBackend.Models
 {
+    /// <summary>
+    /// Simple class to save information about a book
+    /// </summary>
     public class Book
     {
-        public string Year;
-        public string Id;
-        public string Title;
-        public string Description;
-        public double Price;
+        [Key]
+        public int Id { get; set; }
 
-        public Book(string year, string Id, string title, string description)
+        public string Year { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+
+        public string? ImagePath { get; set; }
+
+        public Book() { }
+
+        public Book(int id, string year, string title, string description)
         {
-            this.Id = Id;
-            this.Year = year;
-            this.Title = title;
-            this.Description = description;
+            Id = id;
+            Year = year;
+            Title = title;
+            Description = description;
         }
-
     }
+
 }

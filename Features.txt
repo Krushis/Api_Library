@@ -1,10 +1,14 @@
- 
+First I do js, then I try implementing React and changing things
+
+
 Log in
 - User a
 - Admin b
 
 a:
 view books
+order book
+see ordered book list
 
 b:
 add books
@@ -12,3 +16,15 @@ add books
 Book - title, picture, price, short description.
 You click on the book and it brings you to a mini page where you can
 order the book
+
+Will need to add functionality for updating books (put or patch http endpoint)
+
+So, you click on a book and then get the options to order for the time
+and then when you click on all the info, you get teleported to the page with only the one book, its price and an option to add it to my books.
+
+Main JS functions:
+
+async function
+const response = await fetch(backend api link) (this is automatically a get method)
+and then turn it into a .json
+o fetch ir poto method gali padaryti, kad butu post metodas
