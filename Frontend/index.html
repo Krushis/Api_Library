@@ -11,10 +11,10 @@
      
     <h2>Add a new book</h2>
     <form id="add-book-form" enctype="multipart/form-data">
-        <input type="text" id="title" name="title" placeholder="Book Title" required />
-        <input type="text" id="description" name="description" placeholder="Book Description" required />
-        <input type="text" id="year" name="year" placeholder="Year" required />
-        <input type="file" id="cover-image" name="coverImage" accept="image/*" required />
+        <input type="text" id="title" name="title" placeholder="Book Title" required maxlength="100" />
+        <input type="text" id="description" name="description" placeholder="Book Description" required maxlength="500"/>
+        <input type="text" id="year" name="year" placeholder="Year" required pattern="\d{4}" title="Please enter a valid 4 digit number" />
+        <input type="file" id="cover-image" name="coverImage" accept=".png, .jpg, .jpeg" required />
         <button type="submit" id="post-image">Add Book</button>
     </form>
 

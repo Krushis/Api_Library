@@ -49,6 +49,14 @@ function displayBooks(books) {
 async function addBookWithImage(event) {
     event.preventDefault(); // Prevent default form submission (page reload
 
+    const allowedExtensions = ['jpg', 'jpeg', 'png'];
+    const fileExtension = (document.getElementById('cover-image').files[0]).name.split('.').pop().toLowerCase();
+
+    if (!allowedExtensions.includes(fileExtension)) {
+        document.getElementById('message').textContent = 'Invalid file type. Please upload a .jpg, .jpeg, or .png image.';
+        return;
+    }
+
     const formData = new FormData();
     formData.append('title', document.getElementById('title').value);
     formData.append('description', document.getElementById('description').value);
