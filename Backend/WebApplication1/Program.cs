@@ -1,10 +1,10 @@
+using LibraryBackend;
 using LibraryBackend.Data;
 using LibraryBackend.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Allows to setup different domain things
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -13,28 +13,32 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Logger to log important information
+// adds the logger to the builder
 builder.Logging.AddConsole();
 
-// in-memory database
+// add in-memory database
 builder.Services.AddDbContext<LibraryContext>(options =>
     options.UseInMemoryDatabase("LibraryDatabase"));
 
+// registers bookService that has business logic like calculating the price of a book when you want to order it and
+// sets up methods on the Db to use
 builder.Services.AddTransient<BookService>();
 
-builder.Services.AddEndpointsApiExplorer(); // Swagger needs it, can I move it to Startup?
+// swagger services
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Add controllers
+builder.Services.AddHostedService<FileCleanupService>();
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
-app.UseCors("AllowAll"); // applies to http request pipeline
+
+// for HTTP request pipeline
+app.UseCors("AllowAll");
 app.UseStaticFiles();
 app.UseSwagger();
 app.UseSwaggerUI();
-// Map controllers 
 app.MapControllers();
 
 app.Run();
-
