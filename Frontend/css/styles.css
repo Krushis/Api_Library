@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: rgb(154,147,123);
+    background: radial-gradient(circle, rgba(154,147,123,1) 0%, rgba(159,163,96,1) 19%, rgba(212,214,139,1) 35%, rgba(203,204,147,1) 60%, rgba(198,199,137,1) 66%, rgba(239,239,214,1) 100%); 
+}
+
+form#add-book-form {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form#add-book-form input[type="text"],
+form#add-book-form input[type="file"],
+form#add-book-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form#add-book-form input[type="text"]:focus,
+form#add-book-form input[type="file"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#message {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+#book-list {
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.book-card {
+    border: 3px solid white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.book-card img {
+    height: 100px;
+    width: 150px;
+
+}
+
+#add-text {
+    text-align: center;
+}
+
+#name-api {
+    margin-left: 10px;
+}
