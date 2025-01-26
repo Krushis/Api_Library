@@ -23,6 +23,7 @@ builder.Services.AddDbContext<LibraryContext>(options =>
 // registers bookService that has business logic like calculating the price of a book when you want to order it and
 // sets up methods on the Db to use
 builder.Services.AddTransient<BookService>();
+builder.Services.AddTransient<UserService>();
 
 // swagger services
 builder.Services.AddEndpointsApiExplorer();

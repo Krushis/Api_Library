@@ -11,11 +11,14 @@ namespace LibraryBackend.Controllers
     {
         private readonly BookService _bookService;
         private readonly ILogger<LibraryController> _logger;
+        private readonly UserService _userService;
 
-        public LibraryController(BookService bookService, ILogger<LibraryController> logger)
+        public LibraryController(BookService bookService, ILogger<LibraryController> logger, UserService userServ)
         {
+            _userService = userServ;
             _bookService = bookService;
             _logger = logger;
+
         }
 
         [HttpGet]
@@ -85,5 +88,30 @@ namespace LibraryBackend.Controllers
             _logger.LogInformation($"Added book with id: {book.Id}");
             return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
         }
+
+        [HttpPost("{id}/select")]
+        public IActionResult SelectBook(int id)
+        {
+            var book = _bookService.GetBookById(id);
+            if (book == null)
+            {
+                return NotFound("Book not found");
+            }
+
+            string userId = "AJAJ"; // implement validation bla
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized("User must be logged in to select books");
+            }
+
+            var success = _userService.AddBookToSelection(userId, book);
+            if (!success)
+            {
+                return BadRequest("Book already selected");
+            }
+
+            return Ok($"Book with ID {id} successfully added to selection.");
+        }
+
     }
 }

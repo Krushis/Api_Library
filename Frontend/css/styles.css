@@ -55,10 +55,14 @@ form#add-book-form input[type="file"]:focus {
     margin-bottom: 10px;
 }
 
+.book-card[data-sizing="intrinsic"] {
+    width: min-content;
+    height: min-content;
+}
+
 .book-card img {
     height: 100px;
     width: 150px;
-
 }
 
 #add-text {
@@ -67,4 +71,8 @@ form#add-book-form input[type="file"]:focus {
 
 #name-api {
     margin-left: 10px;
+}
+
+#login-button {
+    text-align: right;
 }

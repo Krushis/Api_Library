@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchBooks();
     document.getElementById('add-book-form').addEventListener('submit', addBookWithImage);
