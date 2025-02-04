@@ -1,6 +1,3 @@
 @WebApplication1_HostAddress = http://localhost:5201
 
-GET {{WebApplication1_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
+// Can also test with this

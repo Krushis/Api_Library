@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace LibraryBackend
 {
+    /// <summary>
+    /// Class for cleaning up images from folder after we stop running the api
+    /// </summary>
     public class FileCleanupService : IHostedService
     {
         private readonly ILogger<FileCleanupService> _logger;

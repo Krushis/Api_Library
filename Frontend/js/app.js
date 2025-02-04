@@ -36,7 +36,7 @@ function displayBooks(books) {
         description.textContent = book.description;
 
         const bookImage = document.createElement('img');
-        bookImage.src = 'http://localhost:5201' + book.imagePath; // Display the image
+        bookImage.src = 'http://localhost:5201' + book.imagePath;
         bookImage.alt = 'Book Cover';
 
         bookCard.appendChild(bookTitle);
@@ -49,7 +49,7 @@ function displayBooks(books) {
 }
 
 async function addBookWithImage(event) {
-    event.preventDefault(); // Prevent default form submission (page reload
+    event.preventDefault(); // Prevent page reload
 
     const allowedExtensions = ['jpg', 'jpeg', 'png'];
     const fileExtension = (document.getElementById('cover-image').files[0]).name.split('.').pop().toLowerCase();
@@ -68,7 +68,7 @@ async function addBookWithImage(event) {
     try {
         const response = await fetch('http://localhost:5201/api/Library/add-book', {
             method: 'POST',
-            body: formData // Send form data (including the image)
+            body: formData
         });
 
         if (!response.ok) {
@@ -78,10 +78,9 @@ async function addBookWithImage(event) {
         const result = await response.json();
         console.log('Book added successfully:', result);
 
-        // Show success message
         document.getElementById('message').textContent = 'Book added successfully!';
 
-        // Optionally, fetch and display all books again to reflect the new addition
+        // fetch and display all books again to reflect the new addition
         fetchBooks();
 
     } catch (error) {

@@ -98,7 +98,7 @@ namespace LibraryBackend.Controllers
                 return NotFound("Book not found");
             }
 
-            string userId = "AJAJ"; // implement validation bla
+            string userId = "AJAJ"; // implement validation for users
             if (string.IsNullOrEmpty(userId))
             {
                 return Unauthorized("User must be logged in to select books");

@@ -1,10 +1,12 @@
-﻿
-using LibraryBackend.Data;
+﻿using LibraryBackend.Data;
 using LibraryBackend.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibraryBackend.Services
 {
+    /// <summary>
+    /// Class for User book saving logic 
+    /// </summary>
     public class UserService
     {
 
@@ -17,7 +19,7 @@ namespace LibraryBackend.Services
 
         public bool AddBookToSelection(string userId, Book book)
         {
-            // Fetch or create a new UserSelection entry
+
             var userSelection = _context.UserSelections.FirstOrDefault(us => us.UserId == userId);
             if (userSelection == null)
             {
@@ -29,13 +31,12 @@ namespace LibraryBackend.Services
                 _context.UserSelections.Add(userSelection);
             }
 
-            // Prevent duplicate selections
+            // prevents duplicate selections
             if (userSelection.SelectedBooks.Any(b => b.Id == book.Id))
             {
                 return false; // Book already selected
             }
 
-            // Add the book to the selection
             userSelection.SelectedBooks.Add(book);
             _context.SaveChanges();
             return true;

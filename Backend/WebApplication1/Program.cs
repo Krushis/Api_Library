@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Because frontend had difficulties connecting to backend
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -25,10 +26,11 @@ builder.Services.AddDbContext<LibraryContext>(options =>
 builder.Services.AddTransient<BookService>();
 builder.Services.AddTransient<UserService>();
 
-// swagger services
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// swagger services, doesnt work anymore for testing, since it does not handle picture uploading, unless you change it a bit
+//builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddSwaggerGen();
 
+// THis is for cleaning up wwroot/images folder after we stop running the program (since in-memory db)
 builder.Services.AddHostedService<FileCleanupService>();
 
 builder.Services.AddControllers();
@@ -38,8 +40,8 @@ var app = builder.Build();
 // for HTTP request pipeline
 app.UseCors("AllowAll");
 app.UseStaticFiles();
-app.UseSwagger();
-app.UseSwaggerUI();
+//app.UseSwagger();
+//app.UseSwaggerUI();
 app.MapControllers();
 
 app.Run();

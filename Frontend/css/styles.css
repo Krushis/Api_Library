@@ -1,8 +1,19 @@
 html, body {
     height: 100%;
-    width: 100%;
-    background: rgb(154,147,123);
-    background: radial-gradient(circle, rgba(154,147,123,1) 0%, rgba(159,163,96,1) 19%, rgba(212,214,139,1) 35%, rgba(203,204,147,1) 60%, rgba(198,199,137,1) 66%, rgba(239,239,214,1) 100%); 
+    margin: 0;
+}
+  
+body {
+    background:  #fef8e4;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+.main-content {
+    flex-grow: 1;
 }
 
 form#add-book-form {
@@ -50,7 +61,8 @@ form#add-book-form input[type="file"]:focus {
 }
 
 .book-card {
-    border: 3px solid white;
+    background-color: beige;
+    border: 3px solid black;
     padding: 20px;
     margin-bottom: 10px;
 }
@@ -74,5 +86,46 @@ form#add-book-form input[type="file"]:focus {
 }
 
 #login-button {
-    text-align: right;
+    text-align: center;
+    margin-top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: beige;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    max-width: 200px;
 }
+
+#login-button:hover{
+    background-color: #45a049;
+}
+
+#selected-books-button{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: beige;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    max-width: 200px;
+}
+
+#selected-books-button:hover{
+    background-color: #45a049;
+}
+
+
+#button-container {
+    display: flex;
+    position: fixed;
+    right: 10px;
+}
+
+
+
