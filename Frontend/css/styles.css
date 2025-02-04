@@ -31,12 +31,16 @@ form#add-book-form input[type="text"],
 form#add-book-form input[type="file"],
 form#add-book-form button {
     display: block;
-    width: 100%;
+    width: 90%;
     margin-bottom: 15px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+form#add-book-form button {
+    margin: 15px auto 0;
 }
 
 form#add-book-form input[type="text"]:focus,
@@ -60,22 +64,62 @@ form#add-book-form input[type="file"]:focus {
     border-radius: 8px;
 }
 
-.book-card {
+#book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#book-list .book-card {
     background-color: beige;
     border: 3px solid black;
     padding: 20px;
     margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.book-card[data-sizing="intrinsic"] {
-    width: min-content;
-    height: min-content;
+#book-list .book-card h3 {
+    font-size: 1.2rem;
+    color: #333;
 }
 
-.book-card img {
-    height: 100px;
-    width: 150px;
+#book-list .book-card h5 {
+    font-size: 1rem;
+    color: #666;
 }
+
+#book-list .book-card h4 {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+#book-list .book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#book-list .book-card button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#book-list .book-card button:hover {
+    background-color: #45a049;
+}
+
 
 #add-text {
     text-align: center;
@@ -127,5 +171,84 @@ form#add-book-form input[type="file"]:focus {
     right: 10px;
 }
 
+#reservation-block.show-form{
+    display: flex;
+}
 
+#reservation-block {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+#res-block-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    text-align: center;
+}
+
+#res-block-content h2 {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #333;
+}
+
+#book-type,
+#day-number {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#pickup-type {
+    margin-top: 10px;
+}
+
+#reserve-form button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#reserve-form button:hover {
+    background-color: #45a049;
+}
+
+#day-number{
+    width: 80%;
+}
+
+#close-form {
+    background-color: #f44336;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 4px 7px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+
+#close-form:hover {
+    background-color: #d32f2f;
+}
 

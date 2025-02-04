@@ -39,14 +39,34 @@ function displayBooks(books) {
         bookImage.src = 'http://localhost:5201' + book.imagePath;
         bookImage.alt = 'Book Cover';
 
+        const reserveButton = document.createElement('button');
+        reserveButton.textContent = 'Reserve';
+
+        reserveButton.addEventListener('click', () => {
+            toggleReserveForm();
+        });
+
+        const closeButton = document.getElementById('close-form');
+
+        closeButton.addEventListener('click', () => {
+            toggleReserveForm();
+        });
+
         bookCard.appendChild(bookTitle);
         bookCard.appendChild(year);
         bookCard.appendChild(description);
         bookCard.appendChild(bookImage);
+        bookCard.appendChild(reserveButton);
 
         bookList.appendChild(bookCard);
     });
 }
+
+
+function toggleReserveForm() {
+    const form = document.getElementById("reservation-block");
+    form.classList.toggle("show-form");
+} 
 
 async function addBookWithImage(event) {
     event.preventDefault(); // Prevent page reload
