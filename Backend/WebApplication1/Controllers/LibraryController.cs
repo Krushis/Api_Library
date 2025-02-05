@@ -33,13 +33,23 @@ namespace LibraryBackend.Controllers
             return Ok(books);
         }
 
+        //[HttpGet("{userID}/reservations")]
+        //public IActionResult GetReservedBooks(string userID)
+        //{
+        //    var response = new { };
+        //    // For now lets say that the User is one and we don't have to check a separate User DB for the ID...
+        //    // Also can add pagination of results later on
+
+        //}
+
         [HttpGet("{id}")]
-        public IActionResult GetBook(int id, [FromQuery] int days=1, [FromQuery] string type="Book", [FromQuery] bool quick=false)
+        public IActionResult GetBook(int id, [FromQuery] int days=1, [FromQuery] string type="Physical", [FromQuery] bool quick=false)
         {
+            //_logger.LogInformation($"{id}, {days}, {type}, {quick}.");
             var book = _bookService.GetBookById(id);
             if (book != null)
             {
-                double price = _bookService.CalculateRentalPrice(book, type, days, quick);
+                double price = _bookService.CalculateRentalPrice(type, days, quick);
 
                 var response = new
                 {
@@ -47,7 +57,10 @@ namespace LibraryBackend.Controllers
                     Price = price
                 };
                 
-                _logger.LogInformation($"Fetched book with id of {id}, with price");
+                _logger.LogInformation($"Fetched book with id of {id}, with price {price}");
+
+                SelectBook(id);
+
                 return Ok(response);
             }
 
@@ -109,9 +122,10 @@ namespace LibraryBackend.Controllers
             {
                 return BadRequest("Book already selected");
             }
-
+            _logger.LogInformation($"Selected book with id: {id}");
             return Ok($"Book with ID {id} successfully added to selection.");
         }
+
 
     }
 }

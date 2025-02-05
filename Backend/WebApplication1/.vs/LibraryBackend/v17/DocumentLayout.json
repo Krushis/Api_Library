@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselectedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\userselectedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\pricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\pricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,32 +31,12 @@
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselectedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\userselectedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\filecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:filecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +54,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PriceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\PriceDTO.cs",
+              "RelativeDocumentMoniker": "Models\\PriceDTO.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\PriceDTO.cs",
+              "RelativeToolTip": "Models\\PriceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T22:53:43.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "Controllers\\LibraryController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAApwCgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:21:59.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\BookService.cs",
+              "RelativeToolTip": "Services\\BookService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:30:36.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T17:14:29.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FileCleanupService.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\FileCleanupService.cs",
+              "RelativeDocumentMoniker": "FileCleanupService.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\FileCleanupService.cs",
+              "RelativeToolTip": "FileCleanupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T18:56:14.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:31:00.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserSelection.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelection.cs",
+              "RelativeDocumentMoniker": "Models\\UserSelection.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelection.cs",
+              "RelativeToolTip": "Models\\UserSelection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T21:20:44.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserSelectedBook.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelectedBook.cs",
               "RelativeDocumentMoniker": "Models\\UserSelectedBook.cs",
@@ -71,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "LibraryContext.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Data\\LibraryContext.cs",
               "RelativeDocumentMoniker": "Data\\LibraryContext.cs",
@@ -80,93 +169,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T21:15:50.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WebApplication1.http",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\WebApplication1.http",
-              "RelativeDocumentMoniker": "WebApplication1.http",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\WebApplication1.http",
-              "RelativeToolTip": "WebApplication1.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-02-04T21:15:05.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\UserService.cs",
-              "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T17:14:29.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FileCleanupService.cs",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\FileCleanupService.cs",
-              "RelativeDocumentMoniker": "FileCleanupService.cs",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\FileCleanupService.cs",
-              "RelativeToolTip": "FileCleanupService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T18:56:14.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LibraryController.cs",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
-              "RelativeToolTip": "Controllers\\LibraryController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wGQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:21:59.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\BookService.cs",
-              "RelativeToolTip": "Services\\BookService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:30:36.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "Models\\Book.cs",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\Book.cs",
-              "RelativeToolTip": "Models\\Book.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:31:00.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserSelection.cs",
-              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelection.cs",
-              "RelativeDocumentMoniker": "Models\\UserSelection.cs",
-              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelection.cs",
-              "RelativeToolTip": "Models\\UserSelection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:20:44.575Z"
             },
             {
               "$type": "Document",

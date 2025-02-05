@@ -1,0 +1,20 @@
+{
+  "Version": 1,
+  "Hash": "Wm9LpA27c13QvFdMOgd/EPZzE7Xh8pK1nCG7I4j71Lw=",
+  "Source": "LibraryBackend",
+  "BasePath": "_content/LibraryBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LibraryBackend\\wwwroot",
+      "Source": "LibraryBackend",
+      "ContentRoot": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/LibraryBackend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [],
+  "Endpoints": []
+}

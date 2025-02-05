@@ -52,6 +52,14 @@ function displayBooks(books) {
             toggleReserveForm();
         });
 
+        document.getElementById("reserve-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            const bookId = 1; // have to set this up in the backend obviously
+            fetchBook(bookId);
+            toggleReserveForm();
+        });
+
         bookCard.appendChild(bookTitle);
         bookCard.appendChild(year);
         bookCard.appendChild(description);
@@ -68,6 +76,7 @@ function toggleReserveForm() {
     form.classList.toggle("show-form");
 } 
 
+// Adds the book to the backend
 async function addBookWithImage(event) {
     event.preventDefault(); // Prevent page reload
 
@@ -98,7 +107,19 @@ async function addBookWithImage(event) {
         const result = await response.json();
         console.log('Book added successfully:', result);
 
-        document.getElementById('message').textContent = 'Book added successfully!';
+        const alertBox = document.getElementById('message');
+
+        alertBox.textContent = 'Book added successfully!';
+        alertBox.style.display = 'block';
+        alertBox.style.opacity = '1';
+
+        setTimeout(() => {
+            alertBox.style.opacity = '0';
+            setTimeout(() => {
+                alertBox.style.display = 'none';
+            }, 500);
+        }, 1000);
+
 
         // fetch and display all books again to reflect the new addition
         fetchBooks();
@@ -108,3 +129,45 @@ async function addBookWithImage(event) {
         document.getElementById('message').textContent = 'Failed to add book: ' + error.message;
     }
 }
+
+// Reserves the book and shows the price of the book as a pop up
+async function fetchBook(bookId) {
+    const days = document.getElementById("day-number").value;
+    const type = document.getElementById("book-type").value;
+    const quick = document.getElementById("pickup-type").checked;
+
+    const url = `http://localhost:5201/api/Library/${bookId}?days=${days}&type=${type}&quick=${quick}`;
+    
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error("Failed to fetch price");
+        }
+        const data = await response.json();
+        //console.log(data);
+        const priceDiv = document.getElementById("book-price-div");
+        priceDiv.textContent = `Price of book you just ordered: ${data.price}`
+
+        priceDiv.style.display = 'block';
+        priceDiv.style.opacity = '1';
+
+
+        setTimeout(() => {
+            priceDiv.style.opacity = '0';
+            setTimeout(() => {
+                priceDiv.style.display = 'none';
+            }, 2500);
+        }, 2500)
+
+
+        //document.getElementById("reservation-price").textContent = `Price: $${data.price}`;
+
+        
+
+    } catch (error) {
+        console.error("Error fetching book price:", error);
+    }
+}
+
+
+

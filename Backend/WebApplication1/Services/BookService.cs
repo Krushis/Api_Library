@@ -24,19 +24,18 @@ namespace LibraryBackend.Services
         /// <summary>
         /// Used to show price when you click on the dynamically loaded page
         /// </summary>
-        /// <param name="book"></param>
         /// <param name="type"></param>
         /// <param name="days"></param>
         /// <param name="quick"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public double CalculateRentalPrice (Book book, string type, int days, bool quick)
+        public double CalculateRentalPrice (string type, int days, bool quick)
         {
             double sum = 3; // Service fee
 
             switch (type)
             {
-                case "Book":
+                case "Physical":
                     sum += days * 2;
                     break;
                 case "Audiobook":
@@ -45,7 +44,7 @@ namespace LibraryBackend.Services
                 default:
                     throw new Exception("type of book not correct");
             }
-
+            
             if (days > 10)
             {
                 sum = sum * 0.8;

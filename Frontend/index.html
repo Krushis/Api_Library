@@ -14,16 +14,19 @@
 
     <h1 id="name-api"> Library api </h1>
      
+
     <h2 id="add-text">Add a new book</h2>
     <form id="add-book-form" enctype="multipart/form-data">
-        <input type="text" id="title" name="title" placeholder="Book Title" required maxlength="100" />
-        <input type="text" id="description" name="description" placeholder="Book Description" required maxlength="500"/>
-        <input type="text" id="year" name="year" placeholder="Year" required pattern="\d{4}" title="Please enter a valid 4 digit number" />
+        <input type="text" id="title" name="title" placeholder="Book Title" required maxlength="100" autocomplete="off" />
+        <input type="text" id="description" name="description" placeholder="Book Description" required maxlength="500" autocomplete="off"/>
+        <input type="text" id="year" name="year" placeholder="Year" required pattern="\d{4}" title="Please enter a valid 4 digit number" autocomplete="off"/>
         <input type="file" id="cover-image" name="coverImage" accept=".png, .jpg, .jpeg" required />
         <button type="submit" id="post-image">Add Book</button>
     </form>
 
     <div id="message"></div>
+
+    <div id="book-price-div"></div>
 
     <div id="book-list"></div>
 
@@ -37,8 +40,8 @@
 
             <label for="book-type"> Select book type </label>
             <select name="book-type" id="book-type" required>
-                <option value="audiobook"> Audiobook </option>
-                <option value="physical"> Physical </option>
+                <option value="Audiobook"> Audiobook </option>
+                <option value="Physical"> Physical </option>
             </select>
 
             <br>
@@ -53,7 +56,7 @@
 
             <br>
 
-            <button type="submit"> See price </button>
+            <button type="submit"> Reserve book </button>
             </form>
         </div>
     </div>

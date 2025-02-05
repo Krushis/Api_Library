@@ -54,7 +54,8 @@ form#add-book-form input[type="file"]:focus {
     margin: 20px auto;
     text-align: center;
     font-size: 24px;
-
+    transition: opacity 0.5s ease-in-out;
+    display: block;
 }
 
 #book-list {
@@ -251,4 +252,13 @@ form#add-book-form input[type="file"]:focus {
 #close-form:hover {
     background-color: #d32f2f;
 }
+
+#post-image:hover{
+    cursor: pointer;
+}
+
+#book-price-div{
+    text-align: center;
+}
+
 
