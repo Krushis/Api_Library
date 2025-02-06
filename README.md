@@ -1,6 +1,5 @@
 # Api_Library
-<<<<<<< HEAD
-In progress
+Project in progress
 
 Library API built with C# ASP.NET, JS, CSS and HTML
 
