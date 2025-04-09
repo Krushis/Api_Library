@@ -2,6 +2,7 @@
 using LibraryBackend.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryBackend.Controllers
 {
@@ -112,12 +113,14 @@ namespace LibraryBackend.Controllers
             }
 
             string userId = "AJAJ"; // implement validation for users
+            int selectedId = 12; // implement this too
+
             if (string.IsNullOrEmpty(userId))
             {
                 return Unauthorized("User must be logged in to select books");
             }
 
-            var success = _userService.AddBookToSelection(userId, book);
+            var success = _userService.AddBookToSelection(userId, new UserSelectedBook(book, userId, book.Id, selectedId));
             if (!success)
             {
                 return BadRequest("Book already selected");
@@ -126,6 +129,16 @@ namespace LibraryBackend.Controllers
             return Ok($"Book with ID {id} successfully added to selection.");
         }
 
+        [HttpGet("{userId}/selected-books")]
+        public IActionResult GetSelectedBooks(string userId)
+        {
+            var books = _userService.GetSelectedBooksByUser(userId);
+            if (books == null || books.Count == 0)
+            {
+                return NotFound();
+            }
+            return Ok(books);
+        }
 
     }
 }

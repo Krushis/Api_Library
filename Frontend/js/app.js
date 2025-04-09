@@ -169,5 +169,9 @@ async function fetchBook(bookId) {
     }
 }
 
+async function fetchSeletcedBooks() {
+    
+}
+
 
 

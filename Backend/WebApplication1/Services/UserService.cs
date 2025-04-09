@@ -17,29 +17,41 @@ namespace LibraryBackend.Services
             _context = context;
         }
 
-        public bool AddBookToSelection(string userId, Book book)
+        public bool AddBookToSelection(string userId, UserSelectedBook book)
         {
+            var userSelection = _context.UserSelections
+                .Include(us => us.SelectedBooks)
+                .FirstOrDefault(us => us.UserId == userId);
 
-            var userSelection = _context.UserSelections.FirstOrDefault(us => us.UserId == userId);
             if (userSelection == null)
             {
                 userSelection = new UserSelection
                 {
                     UserId = userId,
-                    SelectedBooks = new List<Book>()
+                    SelectedBooks = new List<UserSelectedBook>()
                 };
                 _context.UserSelections.Add(userSelection);
             }
 
-            // prevents duplicate selections
+            // prevent duplicates
             if (userSelection.SelectedBooks.Any(b => b.Id == book.Id))
             {
-                return false; // Book already selected
+                return false;
             }
 
             userSelection.SelectedBooks.Add(book);
             _context.SaveChanges();
             return true;
+        }
+
+
+        public List<UserSelectedBook> GetSelectedBooksByUser(string userId)
+        {
+            var selection = _context.UserSelections
+                .Include(us => us.SelectedBooks)
+                .FirstOrDefault(us => us.UserId == userId);
+
+            return selection?.SelectedBooks ?? new List<UserSelectedBook>();
         }
 
     }
