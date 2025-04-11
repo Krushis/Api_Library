@@ -130,24 +130,6 @@ form#add-book-form input[type="file"]:focus {
     margin-left: 10px;
 }
 
-#login-button {
-    text-align: center;
-    margin-top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    background-color: beige;
-    color: black;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: auto;
-    max-width: 200px;
-}
-
-#login-button:hover{
-    background-color: #45a049;
-}
-
 #selected-books-button{
     text-align: center;
     margin-top: 10px;
@@ -159,6 +141,7 @@ form#add-book-form input[type="file"]:focus {
     transition: background-color 0.3s;
     width: auto;
     max-width: 200px;
+    transition-duration: 0.4s;
 }
 
 #selected-books-button:hover{
@@ -246,7 +229,6 @@ form#add-book-form input[type="file"]:focus {
     padding: 4px 7px;
     border-radius: 5px;
     margin-bottom: 15px;
-    
 }
 
 #close-form:hover {
@@ -265,13 +247,68 @@ form#add-book-form input[type="file"]:focus {
     transition: opacity 0.3s ease;
 }
 
-.hidden {
-    display: none;
-    opacity: 0;
+#selected-books-list {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 15px;
 }
 
-.visible {
-    display: block;
-    opacity: 1;
+#selected-books-list .selected-book-card {
+    background-color: antiquewhite;
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+#selected-books-list .selected-book-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#selected-books-list .selected-book-card h5 {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#selected-books-list .selected-book-card h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#selected-books-list .selected-book-card h4 {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#selected-books-list .selected-book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#selected-books-container #selected-header {
+    text-align: center;
+}
+
+#selected-books-container #go-back-button-for-selected {
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+#selected-books-container #go-back-button-for-selected :hover {
+    background-color: #04AA6D;
+    color: white;
+}

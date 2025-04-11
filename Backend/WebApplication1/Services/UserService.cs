@@ -33,8 +33,14 @@ namespace LibraryBackend.Services
                 _context.UserSelections.Add(userSelection);
             }
 
-            // prevent duplicates
-            if (userSelection.SelectedBooks.Any(b => b.Id == book.Id))
+
+            //if (book != null)
+            //{
+            //    _context.Entry(book).State = EntityState.Detached;
+            //}
+
+            // Prevent duplicates
+            if (userSelection.SelectedBooks.Any(b => b.BookId == book.BookId))
             {
                 return false;
             }
@@ -45,14 +51,18 @@ namespace LibraryBackend.Services
         }
 
 
+
         public List<UserSelectedBook> GetSelectedBooksByUser(string userId)
         {
             var selection = _context.UserSelections
-                .Include(us => us.SelectedBooks)
-                .FirstOrDefault(us => us.UserId == userId);
-
-            return selection?.SelectedBooks ?? new List<UserSelectedBook>();
+                .Where(us => us.UserId == userId)
+                .SelectMany(us => us.SelectedBooks)
+                .Include(usb => usb.Book)            
+                .ToList();                    
+            return selection;
         }
+
+
 
     }
 }

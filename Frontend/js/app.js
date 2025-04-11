@@ -55,19 +55,23 @@ function displayBooks(books) {
 
         reserveButton.addEventListener('click', () => {
             toggleReserveForm();
+
+            const reserveForm = document.getElementById("reserve-form");
+
+            const newReserveForm = reserveForm.cloneNode(true);
+            reserveForm.parentNode.replaceChild(newReserveForm, reserveForm);
+        
+            newReserveForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                fetchBook(book.id);
+                toggleReserveForm();
+            });
         });
+        
 
         const closeButton = document.getElementById('close-form');
 
         closeButton.addEventListener('click', () => {
-            toggleReserveForm();
-        });
-
-        document.getElementById("reserve-form").addEventListener("submit", function (event) {
-            event.preventDefault();
-            
-            const bookId = 1; // have to set this up in the backend obviously
-            fetchBook(bookId);
             toggleReserveForm();
         });
 
@@ -151,29 +155,22 @@ async function fetchBook(bookId) {
     
     try {
         const response = await fetch(url);
+        console.log(response);
         if (!response.ok) {
             throw new Error("Failed to fetch price");
         }
         const data = await response.json();
-        //console.log(data);
+  
         const priceDiv = document.getElementById("book-price-div");
         priceDiv.textContent = `Price of book you just ordered: ${data.price}`
 
         priceDiv.style.display = 'block';
         priceDiv.style.opacity = '1';
 
-
         setTimeout(() => {
             priceDiv.style.opacity = '0';
-            setTimeout(() => {
-                priceDiv.style.display = 'none';
-            }, 2500);
-        }, 2500)
-
-
-        //document.getElementById("reservation-price").textContent = `Price: $${data.price}`;
-
-        
+            priceDiv.style.display = 'none';
+        }, 3000)
 
     } catch (error) {
         console.error("Error fetching book price:", error);
@@ -188,13 +185,22 @@ async function showSelectedBooks() {
     document.getElementById('main-content').style.display = 'none';
     container.style.display = 'block';
 
-    bookList.innerHTML = '<li>Loading...</li>';
+    bookList.innerHTML = 'Loading...';
 
     try {
         const response = await fetch("http://localhost:5201/api/Library/AJAJ/selected-books");
-        if (!response.ok) throw new Error("Could not fetch selected books.");
 
+        if (response.status === 404) {
+            bookList.innerHTML = 'User did not reserve any books';
+            return;
+        }
+
+        if (!response.ok) {
+            throw new Error("Could not fetch selected books.");
+        }
         const selectedBooks = await response.json();
+
+        console.log(selectedBooks);
 
         bookList.innerHTML='';
         if (selectedBooks.length === 0) {
@@ -204,32 +210,36 @@ async function showSelectedBooks() {
 
         selectedBooks.forEach(book => {
             const card = document.createElement('div');
-            card.classList.add('book-card');
-
+            card.classList.add('selected-book-card');
+            const book2 = book.book;
 
             const bookTitle = document.createElement('h3');
-            bookTitle.textContent = book.title;
+            bookTitle.textContent = book2.title;
 
             const year = document.createElement('h5');
-            year.textContent = book.year;
+            year.textContent = book2.year;
+
+            const price = document.createElement('h2');
+            price.textContent = book.price + '€';
 
             const description = document.createElement('h4');
-            description.textContent = book.description;
+            description.textContent = book2.description;
 
             const bookImage = document.createElement('img');
-            bookImage.src = 'http://localhost:5201' + book.imagePath;
+            bookImage.src = 'http://localhost:5201' + book2.imagePath;
             bookImage.alt = 'Book Cover';
 
             card.appendChild(bookTitle);
             card.appendChild(year);
             card.appendChild(description);
             card.appendChild(bookImage);
+            card.appendChild(price);
 
             bookList.appendChild(card);
         });
     }
     catch(error) {
-        bookList.innerHTML = '<li>Error loading user selected books</li>';
+        bookList.innerHTML = 'Error loading user selected books';
         console.log("Error: ", error);
     }    
 }

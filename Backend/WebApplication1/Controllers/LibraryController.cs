@@ -1,4 +1,5 @@
 ﻿using LibraryBackend.Models;
+using System.Linq;
 using LibraryBackend.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -60,7 +61,7 @@ namespace LibraryBackend.Controllers
                 
                 _logger.LogInformation($"Fetched book with id of {id}, with price {price}");
 
-                SelectBook(id);
+                SelectBook(id, price);
 
                 return Ok(response);
             }
@@ -104,7 +105,7 @@ namespace LibraryBackend.Controllers
         }
 
         [HttpPost("{id}/select")]
-        public IActionResult SelectBook(int id)
+        public IActionResult SelectBook(int id, double price)
         {
             var book = _bookService.GetBookById(id);
             if (book == null)
@@ -113,14 +114,15 @@ namespace LibraryBackend.Controllers
             }
 
             string userId = "AJAJ"; // implement validation for users
-            int selectedId = 12; // implement this too
+            int selectedId = Guid.NewGuid().GetHashCode();
+
 
             if (string.IsNullOrEmpty(userId))
             {
                 return Unauthorized("User must be logged in to select books");
             }
 
-            var success = _userService.AddBookToSelection(userId, new UserSelectedBook(book, userId, book.Id, selectedId));
+            var success = _userService.AddBookToSelection(userId, new UserSelectedBook(book, userId, book.Id, selectedId, price));
             if (!success)
             {
                 return BadRequest("Book already selected");
@@ -132,6 +134,7 @@ namespace LibraryBackend.Controllers
         [HttpGet("{userId}/selected-books")]
         public IActionResult GetSelectedBooks(string userId)
         {
+
             var books = _userService.GetSelectedBooksByUser(userId);
             if (books == null || books.Count == 0)
             {
