@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
               "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
               "RelativeToolTip": "Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAmwHsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAmwIsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T18:21:59.722Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "Services\\BookService.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAwwDcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:30:36.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T18:30:36.395Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAqwDUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T17:14:29.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T17:14:29.127Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "FileCleanupService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T18:56:14.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-12T18:56:14.437Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "Models\\UserSelection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:20:44.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T21:20:44.575Z"
             },
             {
               "$type": "Document",
@@ -139,8 +135,7 @@
               "RelativeToolTip": "Models\\UserSelectedBook.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:15:54.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T21:15:54.471Z"
             },
             {
               "$type": "Document",
@@ -152,8 +147,7 @@
               "RelativeToolTip": "Data\\LibraryContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:15:50.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T21:15:50.287Z"
             },
             {
               "$type": "Document",

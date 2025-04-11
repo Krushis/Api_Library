@@ -12,52 +12,60 @@
     <button id="login-button"> Login </button>
     </div>
 
-    <h1 id="name-api"> Library api </h1>
-     
+    <div id="selected-books-container">
+        <h2> Your selected books </h2>
+        <div id="selected-books-list"></div>
+        <button id="go-back-button-for-selected">Back to start</button>
+    </div>
 
-    <h2 id="add-text">Add a new book</h2>
-    <form id="add-book-form" enctype="multipart/form-data">
-        <input type="text" id="title" name="title" placeholder="Book Title" required maxlength="100" autocomplete="off" />
-        <input type="text" id="description" name="description" placeholder="Book Description" required maxlength="500" autocomplete="off"/>
-        <input type="text" id="year" name="year" placeholder="Year" required pattern="\d{4}" title="Please enter a valid 4 digit number" autocomplete="off"/>
-        <input type="file" id="cover-image" name="coverImage" accept=".png, .jpg, .jpeg" required />
-        <button type="submit" id="post-image">Add Book</button>
-    </form>
+    <div id="main-content">
 
-    <div id="message"></div>
+        <h1 id="name-api"> Library api </h1>
 
-    <div id="book-price-div"></div>
+        <h2 id="add-text">Add a new book</h2>
+        <form id="add-book-form" enctype="multipart/form-data">
+            <input type="text" id="title" name="title" placeholder="Book Title" required maxlength="100" autocomplete="off" />
+            <input type="text" id="description" name="description" placeholder="Book Description" required maxlength="500" autocomplete="off"/>
+            <input type="text" id="year" name="year" placeholder="Year" required pattern="\d{4}" title="Please enter a valid 4 digit number" autocomplete="off"/>
+            <input type="file" id="cover-image" name="coverImage" accept=".png, .jpg, .jpeg" required />
+            <button type="submit" id="post-image">Add Book</button>
+        </form>
 
-    <div id="book-list"></div>
+        <div id="message"></div>
 
-    <div id="reservation-block">
-        <div id="res-block-content">
-            <button type="button" id="close-form">X</button>
-            <h2> Choose Reservation details </h2>
-            <form id="reserve-form">
+        <div id="book-price-div"></div>
 
-            <br>
+        <div id="book-list"></div>
 
-            <label for="book-type"> Select book type </label>
-            <select name="book-type" id="book-type" required>
-                <option value="Audiobook"> Audiobook </option>
-                <option value="Physical"> Physical </option>
-            </select>
+        <div id="reservation-block">
+            <div id="res-block-content">
+                <button type="button" id="close-form">X</button>
+                <h2> Choose Reservation details </h2>
+                <form id="reserve-form">
 
-            <br>
+                <br>
 
-            <label for="day-number"> Length of reservation </label>
-            <input type="number" id="day-number" name="day-reservation-length" min="1" max="99" required>
+                <label for="book-type"> Select book type </label>
+                <select name="book-type" id="book-type" required>
+                    <option value="Audiobook"> Audiobook </option>
+                    <option value="Physical"> Physical </option>
+                </select>
 
-            <br>
+                <br>
 
-            <label for="pickup-type"> Quick pickup? </label>
-            <input type="checkbox" id="pickup-type" name="pickup-type">
+                <label for="day-number"> Length of reservation </label>
+                <input type="number" id="day-number" name="day-reservation-length" min="1" max="99" required>
 
-            <br>
+                <br>
 
-            <button type="submit"> Reserve book </button>
-            </form>
+                <label for="pickup-type"> Quick pickup? </label>
+                <input type="checkbox" id="pickup-type" name="pickup-type">
+
+                <br>
+
+                <button type="submit"> Reserve book </button>
+                </form>
+            </div>
         </div>
     </div>
 

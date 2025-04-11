@@ -137,6 +137,7 @@ namespace LibraryBackend.Controllers
             {
                 return NotFound();
             }
+            _logger.LogInformation($"Fetched {books.Count()} books from DB");
             return Ok(books);
         }
 

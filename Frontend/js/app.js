@@ -1,9 +1,18 @@
+//
 
+document.getElementById('selected-books-container').style.display = 'none';
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchBooks();
+
     document.getElementById('add-book-form').addEventListener('submit', addBookWithImage);
+    document.getElementById('selected-books-button').addEventListener('click', showSelectedBooks);
+    document.getElementById('go-back-button-for-selected').addEventListener('click', () => {
+        document.getElementById('selected-books-container').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    });
 });
+
 
 async function fetchBooks() {
     try {    
@@ -17,6 +26,8 @@ async function fetchBooks() {
         console.error('Error fetching books:', error);
     }
 }
+
+
 
 function displayBooks(books) {
     const bookList = document.getElementById('book-list');
@@ -169,8 +180,58 @@ async function fetchBook(bookId) {
     }
 }
 
-async function fetchSeletcedBooks() {
-    
+async function showSelectedBooks() {
+    // We hide the page content
+    const container = document.getElementById('selected-books-container');
+    const bookList = document.getElementById('selected-books-list');
+
+    document.getElementById('main-content').style.display = 'none';
+    container.style.display = 'block';
+
+    bookList.innerHTML = '<li>Loading...</li>';
+
+    try {
+        const response = await fetch("http://localhost:5201/api/Library/AJAJ/selected-books");
+        if (!response.ok) throw new Error("Could not fetch selected books.");
+
+        const selectedBooks = await response.json();
+
+        bookList.innerHTML='';
+        if (selectedBooks.length === 0) {
+            bookList.innerHTML = 'User did not reserve any books';
+            return;
+        }
+
+        selectedBooks.forEach(book => {
+            const card = document.createElement('div');
+            card.classList.add('book-card');
+
+
+            const bookTitle = document.createElement('h3');
+            bookTitle.textContent = book.title;
+
+            const year = document.createElement('h5');
+            year.textContent = book.year;
+
+            const description = document.createElement('h4');
+            description.textContent = book.description;
+
+            const bookImage = document.createElement('img');
+            bookImage.src = 'http://localhost:5201' + book.imagePath;
+            bookImage.alt = 'Book Cover';
+
+            card.appendChild(bookTitle);
+            card.appendChild(year);
+            card.appendChild(description);
+            card.appendChild(bookImage);
+
+            bookList.appendChild(card);
+        });
+    }
+    catch(error) {
+        bookList.innerHTML = '<li>Error loading user selected books</li>';
+        console.log("Error: ", error);
+    }    
 }
 
 
