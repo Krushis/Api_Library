@@ -20,7 +20,6 @@ namespace LibraryBackend.Services
 
         public bool AddBookToSelection(ILogger<LibraryController> _logger, string userId, int bookId, int selectedId, double price)
         {
-            // Check if the book already exists in the user's selection
             var alreadySelected = _context.UserSelectedBooks
                 .Any(b => b.UserId == userId && b.BookId == bookId);
 
@@ -30,7 +29,6 @@ namespace LibraryBackend.Services
                 return false;
             }
 
-            // Get the book from the DB
             var book = _context.Books.FirstOrDefault(b => b.Id == bookId);
             if (book == null)
             {
@@ -38,10 +36,8 @@ namespace LibraryBackend.Services
                 return false;
             }
 
-            // Create a new UserSelectedBook
             var selectedBook = new UserSelectedBook(book, userId, bookId, selectedId, price);
 
-            // Add it to the database
             _context.UserSelectedBooks.Add(selectedBook);
             _context.SaveChanges();
 

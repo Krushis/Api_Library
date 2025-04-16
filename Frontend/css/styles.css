@@ -174,6 +174,7 @@ form#add-book-form input[type="file"]:focus {
 
 #res-block-content {
     background: #ffffff;
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -182,22 +183,25 @@ form#add-book-form input[type="file"]:focus {
 }
 
 #res-block-content h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 5px;
     color: #333;
+    margin-bottom: 0px;
 }
 
 #book-type,
 #day-number {
     width: 100%;
     padding: 8px;
-    margin-top: 6px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #pickup-type {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #reserve-form button {
@@ -208,7 +212,7 @@ form#add-book-form input[type="file"]:focus {
     cursor: pointer;
     border: none;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
@@ -222,13 +226,15 @@ form#add-book-form input[type="file"]:focus {
 
 #close-form {
     background-color: #f44336;
+    position: absolute;
+    right: 0;
     color: white;
+    margin-right: 10px;
     font-size: 1rem;
     cursor: pointer;
     border: none;
-    padding: 4px 7px;
+    padding: 2px 6px;
     border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 #close-form:hover {

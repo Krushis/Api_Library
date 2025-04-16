@@ -75,6 +75,13 @@ function displayBooks(books) {
             toggleReserveForm();
         });
 
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                toggleReserveForm();
+            }
+        });
+
+
         bookCard.appendChild(bookTitle);
         bookCard.appendChild(year);
         bookCard.appendChild(description);
