@@ -39,8 +39,10 @@ namespace LibraryBackend.Controllers
         [HttpGet("{id}")]
         public IActionResult GetBook(int id, [FromQuery] int days=1, [FromQuery] string type="Physical", [FromQuery] bool quick=false)
         {
+            //_logger.LogInformation($"Next log is book");
             //_logger.LogInformation($"{id}, {days}, {type}, {quick}.");
             var book = _bookService.GetBookById(id);
+            //_logger.LogInformation($"{book.Id}");
             if (book != null)
             {
                 double price = _bookService.CalculateRentalPrice(type, days, quick);
@@ -53,7 +55,7 @@ namespace LibraryBackend.Controllers
                 
                 _logger.LogInformation($"Fetched book with id of {id}, with price {price}");
 
-                SelectBook(id, price);
+                SelectBook(id, price); // problem is with this line
 
                 return Ok(response);
             }
@@ -99,6 +101,7 @@ namespace LibraryBackend.Controllers
         public IActionResult SelectBook(int id, double price)
         {
             var book = _bookService.GetBookById(id);
+
             if (book == null)
             {
                 return NotFound("Book not found");
@@ -113,7 +116,7 @@ namespace LibraryBackend.Controllers
                 return Unauthorized("User must be logged in to select books");
             }
 
-            var success = _userService.AddBookToSelection(userId, id, selectedId, price);
+            var success = _userService.AddBookToSelection(_logger, userId, id, selectedId, price);
             if (!success)
             {
                 return BadRequest("Book already selected");
