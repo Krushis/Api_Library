@@ -11,8 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('selected-books-container').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
     });
+    document.getElementById('selected-books-list').addEventListener('click', (event) => {
+        if (event.target.tagName === 'BUTTON') {
+            const card = event.target.closest('.selected-book-card');
+            if (card) {
+                console.log(`Removing card with ID: ${card.id}`);
+                card.remove();
+            }
+        }
+    });
 });
-
 
 async function fetchBooks() {
     try {    
@@ -233,6 +241,9 @@ async function showSelectedBooks() {
             const description = document.createElement('h4');
             description.textContent = book2.description;
 
+            const button = document.createElement('button');
+            button.textContent = 'X';
+
             const bookImage = document.createElement('img');
             bookImage.src = 'http://localhost:5201' + book2.imagePath;
             bookImage.alt = 'Book Cover';
@@ -242,6 +253,10 @@ async function showSelectedBooks() {
             card.appendChild(description);
             card.appendChild(bookImage);
             card.appendChild(price);
+            card.appendChild(button);
+
+            card.id = book.book.id;
+            console.log("AAAAAAAAAAA", card.id);
 
             bookList.appendChild(card);
         });
