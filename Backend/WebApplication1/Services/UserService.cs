@@ -17,7 +17,7 @@ namespace LibraryBackend.Services
             _context = context;
         }
 
-        public bool AddBookToSelection(string userId, UserSelectedBook book)
+        public bool AddBookToSelection(string userId, int bookId, int selectedId, double price)
         {
             var userSelection = _context.UserSelections
                 .Include(us => us.SelectedBooks)
@@ -33,22 +33,23 @@ namespace LibraryBackend.Services
                 _context.UserSelections.Add(userSelection);
             }
 
-
-            //if (book != null)
-            //{
-            //    _context.Entry(book).State = EntityState.Detached;
-            //}
-
-            // Prevent duplicates
-            if (userSelection.SelectedBooks.Any(b => b.BookId == book.BookId))
+            if (userSelection.SelectedBooks.Any(b => b.BookId == bookId))
             {
                 return false;
             }
 
-            userSelection.SelectedBooks.Add(book);
+            var book = _context.Books.FirstOrDefault(b => b.Id == bookId);
+
+            if (book == null)
+                return false;
+
+            var selectedBook = new UserSelectedBook(book, userId, bookId, selectedId, price);
+
+            userSelection.SelectedBooks.Add(selectedBook);
             _context.SaveChanges();
             return true;
         }
+
 
 
 

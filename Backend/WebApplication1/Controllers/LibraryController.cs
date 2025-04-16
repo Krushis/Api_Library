@@ -35,15 +35,7 @@ namespace LibraryBackend.Controllers
             return Ok(books);
         }
 
-        //[HttpGet("{userID}/reservations")]
-        //public IActionResult GetReservedBooks(string userID)
-        //{
-        //    var response = new { };
-        //    // For now lets say that the User is one and we don't have to check a separate User DB for the ID...
-        //    // Also can add pagination of results later on
-
-        //}
-
+        // Selects a book with price based on the Form results
         [HttpGet("{id}")]
         public IActionResult GetBook(int id, [FromQuery] int days=1, [FromQuery] string type="Physical", [FromQuery] bool quick=false)
         {
@@ -97,7 +89,6 @@ namespace LibraryBackend.Controllers
             // Update the book with the cover image path
             book.ImagePath = "/images/" + fileName;
 
-            // check if book fits regex or sth
             _bookService.AddBook(book);
             _bookService.SaveChanges();
             _logger.LogInformation($"Added book with id: {book.Id}");
@@ -122,7 +113,7 @@ namespace LibraryBackend.Controllers
                 return Unauthorized("User must be logged in to select books");
             }
 
-            var success = _userService.AddBookToSelection(userId, new UserSelectedBook(book, userId, book.Id, selectedId, price));
+            var success = _userService.AddBookToSelection(userId, id, selectedId, price);
             if (!success)
             {
                 return BadRequest("Book already selected");

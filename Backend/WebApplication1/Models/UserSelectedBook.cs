@@ -13,12 +13,11 @@ namespace LibraryBackend.Models
         public string UserId { get; set; }
         public int BookId { get; set; }
 
-        [ForeignKey(nameof(BookId))]
         public Book Book { get; set; }
 
         public UserSelectedBook(Book book, string userid, int bookid, int id, double price) 
         {
-            this.Book = book;
+            this.Book = book;// method
             this.UserId = userid;
             this.BookId = bookid;
             this.Id = id;
