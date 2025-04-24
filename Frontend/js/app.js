@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (card) {
                 console.log(`Removing card with ID: ${card.id}`);
                 card.remove();
+                deselectBook(card.id);
             }
         }
     });
@@ -256,7 +257,6 @@ async function showSelectedBooks() {
             card.appendChild(button);
 
             card.id = book.book.id;
-            console.log("AAAAAAAAAAA", card.id);
 
             bookList.appendChild(card);
         });
@@ -265,6 +265,29 @@ async function showSelectedBooks() {
         bookList.innerHTML = 'Error loading user selected books';
         console.log("Error: ", error);
     }    
+}
+
+/**
+ * @param {number} bookID
+ * Deselects a book from the backend based on the Id of the book that was selected
+ */
+async function deselectBook(bookId) 
+{
+    const url = `http://localhost:5201/api/Library/AJAJ/deselect/${bookId}`;
+
+    try {
+        const response = await fetch(url, {
+            method: 'DELETE'
+        });
+        
+
+        if (!response.ok) {
+            throw new Error("Could not fetch selected books.");
+        }
+    }
+    catch(error) {
+        console.log("Error: ", error);
+    }
 }
 
 

@@ -138,7 +138,14 @@ namespace LibraryBackend.Controllers
             return Ok(books);
         }
 
-
+        [HttpDelete("{userId}/deselect/{bookId}")]
+        public IActionResult DeselectBook(string userId, int BookId)
+        {
+            _logger.LogInformation($"Trying to deselect book with id: {BookId}");
+            _userService.DeselectBook(BookId, userId);
+        
+            return Ok();
+        }
 
     }
 }

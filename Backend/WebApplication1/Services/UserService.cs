@@ -54,5 +54,22 @@ namespace LibraryBackend.Services
                 .ToList();
         }
 
+        /// <summary>
+        /// Deselects a book from a user's - specified by the UserId parameter, selected books list
+        /// </summary>
+        /// <param name="bookId">Book whose Id we want to remove from selections</param>
+        /// <param name="userId">The Id of the User whose selections we want to go through</param>
+        public void DeselectBook(int bookId, string userId)
+        {
+            var selectedBook = _context.UserSelectedBooks
+            .FirstOrDefault(usb => usb.BookId == bookId && usb.UserId == userId);
+
+            if (selectedBook != null)
+            {
+                _context.UserSelectedBooks.Remove(selectedBook);
+                _context.SaveChanges();
+            }
+        }
+
     }
 }
