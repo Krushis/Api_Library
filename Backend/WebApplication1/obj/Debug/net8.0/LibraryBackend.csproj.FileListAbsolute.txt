@@ -7,6 +7,7 @@ C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Libr
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\LibraryBackend.runtimeconfig.json
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\LibraryBackend.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\LibraryBackend.pdb
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
@@ -18,11 +19,17 @@ C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Micr
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\obj\Debug\net8.0\LibraryBackend.csproj.AssemblyReference.cache
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\obj\Debug\net8.0\LibraryBackend.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lukas\Desktop\Api_Library\Backend\WebApplication1\obj\Debug\net8.0\LibraryBackend.AssemblyInfoInputs.cache

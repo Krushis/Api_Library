@@ -4,11 +4,13 @@ using LibraryBackend.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LibraryBackend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LibraryController : ControllerBase
     {
         private readonly BookService _bookService;
@@ -24,6 +26,8 @@ namespace LibraryBackend.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous] // so that person without logging in can see the books
+        // Ahh but I will need to lock certain buttons too
         public IActionResult GetAllBooks()
         {
             var books = _bookService.GetAllBooks();
@@ -107,7 +111,7 @@ namespace LibraryBackend.Controllers
                 return NotFound("Book not found");
             }
 
-            string userId = "AJAJ"; // implement validation for users
+            string userId = User.Identity?.Name;
             int selectedId = Guid.NewGuid().GetHashCode();
 
 

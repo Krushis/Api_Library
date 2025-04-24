@@ -71,5 +71,17 @@ namespace LibraryBackend.Services
             }
         }
 
+        public User ValidateUser(string username, string password)
+        {
+            var user = _context.Users.SingleOrDefault(u => u.UserName == username);
+
+            // If user is not found or password is incorrect
+            if (user == null || user.PassWord != password)  // can hash
+            {
+                return null;
+            }
+
+            return user;
+        }
     }
 }

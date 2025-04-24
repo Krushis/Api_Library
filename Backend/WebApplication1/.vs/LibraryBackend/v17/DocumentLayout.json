@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:webapplication1.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +31,20 @@
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselectedbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +55,8 @@
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:models\\userselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\filecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:filecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|c:\\users\\lukas\\desktop\\api_library\\backend\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFC40E6F-6265-4020-A8DB-3B971DFFB343}|LibraryBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,49 +66,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-24T20:01:30.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebApplication1.http",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\WebApplication1.http",
+              "RelativeDocumentMoniker": "WebApplication1.http",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\WebApplication1.http",
+              "RelativeToolTip": "WebApplication1.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-24T19:59:43.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:29:19.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LibraryController.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
               "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
               "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\LibraryController.cs",
               "RelativeToolTip": "Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAADwv40AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAmwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T18:21:59.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwCMAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:11:31.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
               "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\UserService.cs",
               "RelativeToolTip": "Services\\UserService.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAEcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-26T17:14:29.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "LibraryContext.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Data\\LibraryContext.cs",
               "RelativeDocumentMoniker": "Data\\LibraryContext.cs",
               "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Data\\LibraryContext.cs",
               "RelativeToolTip": "Data\\LibraryContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:15:50.287Z"
+              "WhenOpened": "2025-02-04T21:15:50.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "UserSelectedBook.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelectedBook.cs",
               "RelativeDocumentMoniker": "Models\\UserSelectedBook.cs",
@@ -104,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "BookService.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Services\\BookService.cs",
               "RelativeDocumentMoniker": "Services\\BookService.cs",
@@ -116,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "FileCleanupService.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\FileCleanupService.cs",
               "RelativeDocumentMoniker": "FileCleanupService.cs",
@@ -128,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -140,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UserSelection.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Models\\UserSelection.cs",
               "RelativeDocumentMoniker": "Models\\UserSelection.cs",
@@ -148,31 +217,34 @@
               "RelativeToolTip": "Models\\UserSelection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T21:20:44.575Z"
+              "WhenOpened": "2025-02-04T21:20:44.575Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T16:40:52.865Z"
+              "WhenOpened": "2025-01-09T16:40:52.865Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Startup.cs",
               "RelativeDocumentMoniker": "Startup.cs",
               "ToolTip": "C:\\Users\\Lukas\\Desktop\\Api_Library\\Backend\\WebApplication1\\Startup.cs",
               "RelativeToolTip": "Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T19:51:03.549Z"
+              "WhenOpened": "2025-01-09T19:51:03.549Z",
+              "EditorCaption": ""
             }
           ]
         }

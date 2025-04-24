@@ -8,6 +8,7 @@ namespace LibraryBackend.Data
         public DbSet<Book> Books {  get; set; }
         public DbSet<UserSelection> UserSelections { get; set; }
         public DbSet<UserSelectedBook> UserSelectedBooks { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public LibraryContext(DbContextOptions<LibraryContext> options) : base(options) 
         {

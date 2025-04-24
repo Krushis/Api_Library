@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target.tagName === 'BUTTON') {
             const card = event.target.closest('.selected-book-card');
             if (card) {
-                console.log(`Removing card with ID: ${card.id}`);
-                card.remove();
-                deselectBook(card.id);
+                const confirmed = confirm("Are you sure you want to delete this book?")
+                if (confirmed) {
+                    console.log(`Removing card with ID: ${card.id}`);
+                    card.remove();
+                    deselectBook(card.id);
+                }
             }
         }
     });
@@ -273,6 +276,7 @@ async function showSelectedBooks() {
  */
 async function deselectBook(bookId) 
 {
+
     const url = `http://localhost:5201/api/Library/AJAJ/deselect/${bookId}`;
 
     try {
@@ -289,6 +293,4 @@ async function deselectBook(bookId)
         console.log("Error: ", error);
     }
 }
-
-
 
